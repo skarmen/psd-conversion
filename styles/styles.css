@@ -228,7 +228,7 @@ nav {
 } */
 
 /*  image first not stacke din div - remove the div from the ima */
-.lineup-img {
+.lineup img {
   width: 50%;
   float: right;
   object-fit: cover;
@@ -239,7 +239,6 @@ nav {
 /* new experiences section */
 .experiences {
   background-color: rgb(16,6,50);
-  padding: 100px 0;
 }
 
 .experiences-content-container, .experiences-img-container {
@@ -250,10 +249,18 @@ nav {
   width: 50%;
 }
 
+.experiences img {
+  width: 50%;
+  float: left;
+  object-fit: cover;
+  height: 700px;
+}
+
 .experiences-content-container {
   width: calc(50% - 60px);
   margin-left: 60px;
   /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
+  padding: 100px 0;
 }
 
 
@@ -283,9 +290,11 @@ nav {
 .social-icons {
   background-color: rgb(61,3,105);
   padding: 100px 0;
+  /* height: 200px; */
   /* how to give this section more width */
 }
 
+/* .social-icons */
 
 /* gallery section */
 .gallery {
