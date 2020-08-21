@@ -315,15 +315,19 @@ nav {
 
 footer {
   background-color: rgb(61,3,105);
-  padding: 100px 0;
-  position: relative;
+  padding-top: 100px;
+  /* position: relative; */
   width: 100%
 }
 
-p.copyright {
-  position: absolute;
+.copyright {
+  background-color: rgb(16,6,50);
+  /* i don't think this does anything */
+  position: relative;
   text-align: center;
+  /* this also doesn't do anything */
   bottom: 0;
+
 }
 .contact-info {
   width: 50%;
