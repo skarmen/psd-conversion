@@ -143,7 +143,7 @@ a {
 
 
 /* buttons */
-button {
+button, .submit-button {
   font-family: 'Iceberg', cursive;
   font-size: 25px;
   line-height: 29px;
@@ -152,6 +152,8 @@ button {
   color: #fff;
   padding: 15px;
 }
+
+
 /*  TO DO - fix the subscribe button */
 
 
@@ -224,6 +226,14 @@ nav {
 /* .lineup-img-container img {
   object-fit: cover;
 } */
+
+/*  image first not stacke din div - remove the div from the ima */
+.lineup-img {
+  width: 50%;
+  float: right;
+  object-fit: cover;
+  height: 700px;
+}
 
 
 /* new experiences section */
@@ -308,10 +318,29 @@ footer {
   padding: 100px 0;
 }
 
-/*  image first not stacke din div - remove the div from the ima */
-.lineup-img {
+.contact-info {
   width: 50%;
-  float: right;
-  object-fit: cover;
-  height: 700px;
+  float: left;
+}
+
+.subscribe {
+  width: 50%;
+  float: left;
+  /* float: right - what is the difference */
+}
+
+.subscribe, .contact-info {
+  padding: 60px 0;
+}
+
+input {
+  padding: 15px;
+  line-height: 29px;
+  border-radius: 0;
+  border: none;
+  float: left;
+}
+
+.input-field {
+  width: 60%;
 }
