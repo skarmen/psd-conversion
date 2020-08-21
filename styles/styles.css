@@ -316,6 +316,19 @@ nav {
 footer {
   background-color: rgb(61,3,105);
   padding: 100px 0;
+  position: relative;
+  width: 100%;
+}
+
+/* from https://stackoverflow.com/questions/34228591/how-to-position-copyright-footer-into-the-center-bottom-of-the-footer */
+p.copyright {
+  position: absolute;
+  width: 100%;
+  /* line-height: 40px;
+  font-size: 0.7em; */
+  text-align: center;
+  bottom:0;
+
 }
 
 .contact-info {
