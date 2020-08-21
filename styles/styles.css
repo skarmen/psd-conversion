@@ -134,11 +134,13 @@ a {
   font-size: 52px;
  }
 
- .social-icons a {
+ .info-section a {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  /* for accesability */
+  padding: 10px;
  }
 
 
@@ -287,14 +289,16 @@ nav {
 
 
 /* social icons section */
-.social-icons {
+.info-section {
   background-color: rgb(61,3,105);
   padding: 100px 0;
-  /* height: 200px; */
+  height: 200px;
   /* how to give this section more width */
 }
 
-/* .social-icons */
+.social-icons {
+  font-size: 30px;
+}
 
 /* gallery section */
 .gallery {
