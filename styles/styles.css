@@ -316,8 +316,15 @@ nav {
 footer {
   background-color: rgb(61,3,105);
   padding: 100px 0;
+  position: relative;
+  width: 100%
 }
 
+p.copyright {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+}
 .contact-info {
   width: 50%;
   float: left;
