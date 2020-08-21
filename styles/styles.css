@@ -201,7 +201,7 @@ nav {
 /* lineup section */
 .lineup {
   background-color: rgb(16,6,50);
-  padding: 100px 0;
+  /* padding: 100px 0; */
   /* may want to combine to add new expericnes to the same rules */
 }
 
@@ -214,6 +214,7 @@ nav {
   width: calc(50% - 60px);
   margin-right: 60px;
   /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
+  padding: 100px 0;
 
 }
 
@@ -305,4 +306,12 @@ nav {
 footer {
   background-color: rgb(61,3,105);
   padding: 100px 0;
+}
+
+/*  image first not stacke din div - remove the div from the ima */
+.lineup-img {
+  width: 50%;
+  float: right;
+  object-fit: cover;
+  height: 700px;
 }
