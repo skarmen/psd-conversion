@@ -20,6 +20,7 @@ img { max-width: 100%;}
 
 1. Set fallback fonts
 2. check that you applied the correct styles & specificity to headings
+3. section container figur eout if you shoudl use calc on the container otr the image?
 
 
 */
@@ -57,7 +58,7 @@ rgb(8,8,11)
   font-family: 'Iceberg', cursive;
 */
 
-/* HEADINGS - PERFORMIN, NEW EXPERINCE, GET YOUR
+/* HEADINGS - PERFORMIN, NEW EXPERINCE, GET YOUR - done
   Iceberg, Regular, 52px
   font-family: 'Iceberg', cursive;
 */
@@ -72,7 +73,7 @@ rgb(8,8,11)
 
 
 
-/* HEADINGS - LOCATION, TICKETS, REACH OUT
+/* HEADINGS - LOCATION, TICKETS, REACH OUT - done
   Montserrat, Bold, 30px, center
   font-family: 'Montserrat', sans-serif;
 */
@@ -126,6 +127,39 @@ a {
 }
 
 
+
+/* section headings  */
+ h2 {
+  font-family: 'Iceberg', cursive;
+  font-size: 52px;
+ }
+
+ .social-icons a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+ }
+
+
+/* buttons */
+button {
+  font-family: 'Iceberg', cursive;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  background-color: rgb(146, 0, 255);
+  color: #fff;
+  padding: 15px;
+}
+/*  TO DO - fix the subscribe button */
+
+
+
+
+
+
+
 /* header */
 header {
     background-image: url(../assets/main-banner.png);
@@ -164,32 +198,111 @@ nav {
 }
 
 
-/* section headings  */
- h2 {
-  font-family: 'Iceberg', cursive;
-  font-size: 52px;
-  color: black;
- }
-
- .social-icons a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  text-align: center;
-  color: black;
- }
-
-
-
-
-/* buttons */
-button {
-  font-family: 'Iceberg', cursive;
-  font-size: 25px;
-  line-height: 29px;
-  text-align: center;
-  background-color: rgb(146, 0, 255);
-  color: #fff;
-  padding: 15px;
+/* lineup section */
+.lineup {
+  background-color: rgb(16,6,50);
+  padding: 100px 0;
+  /* may want to combine to add new expericnes to the same rules */
 }
 
-/*  TO DO - fix the subscribe button */
+.lineup-content-container,
+.lineup-img-container {
+  float: left;
+}
+
+.lineup-content-container {
+  width: calc(50% - 60px);
+  margin-right: 60px;
+  /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
+
+}
+
+.lineup-img-container {
+    width: 50%;
+}
+/* .lineup-img-container img {
+  object-fit: cover;
+} */
+
+
+/* new experiences section */
+.experiences {
+  background-color: rgb(16,6,50);
+  padding: 100px 0;
+}
+
+.experiences-content-container, .experiences-img-container {
+  float: left;
+}
+
+.experiences-img-container {
+  width: 50%;
+}
+
+.experiences-content-container {
+  width: calc(50% - 60px);
+  margin-left: 60px;
+  /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
+}
+
+
+/* tickets section */
+.tickets {
+  background-color: rgb(8,8,11);
+  padding: 100px 0;
+}
+
+.tickets-content-container,
+.tickets-img-container {
+  float: left;
+}
+
+.tickets-img-container {
+  width: calc(40% - 40px);
+    /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
+    margin-right: 40px;
+}
+
+.tickets-content-container {
+  width: 60%;
+}
+
+
+/* social icons section */
+.social-icons {
+  background-color: rgb(61,3,105);
+  padding: 100px 0;
+  /* how to give this section more width */
+}
+
+
+/* gallery section */
+.gallery {
+  background-color: rgb(16,6,50);
+  padding: 100px 0;
+}
+
+.gallery h2 {
+  text-align: center;
+}
+
+.gallery li {
+  float: left;
+  width: calc((100% - 140px) / 3);
+  /* margin-right: 40px; */
+  margin-top: 100px;
+  margin-right: 40px;
+}
+
+/* target the 3rd item */
+.gallery li:nth-child(3){
+  margin-right: 0;
+}
+
+
+/* footer */
+
+footer {
+  background-color: rgb(61,3,105);
+  padding: 100px 0;
+}
