@@ -113,7 +113,7 @@ ul {
 a {
     text-decoration: none;
     color:#fff;
-    padding: 10px;
+    padding: 20px;
     /* font-size: 35px; */
 }
 
@@ -180,8 +180,22 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
+
+.banner-icons {
+ /* center the content vertically */
+  position: absolute;
+  top: 32%;
+  right: 0%;
+  transform: translate(-32%);
+}
+
+.banner-icons li {
+  /* padding-right: 30px; */
+  font-size: 2.9rem;
+  padding-bottom: 20px;
+}
+
 
 h1 {
   font-family: 'Iceberg', cursive;
@@ -389,10 +403,7 @@ footer {
   bottom: 0;
 }
 
-.copyright a {
-  /* for accesability */
-  padding: 10px;
-}
+
 
 .contact-info {
   width: 50%;
