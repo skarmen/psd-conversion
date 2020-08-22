@@ -134,14 +134,7 @@ a {
   font-size: 52px;
  }
 
- .info-section a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
-  /* for accesability */
-  padding: 10px;
- }
+
 
 
 /* buttons */
@@ -296,9 +289,40 @@ nav {
   /* how to give this section more width */
 }
 
-.social-icons {
+ .info-section-container {
+    /* width: 50%; */
+    text-align: center;
+    margin: 0 25%;
+
+  }
+
+  .info-link {
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  /* for accesability */
+  padding: 10px;
+  width: 30%;
+  display: inline-block;
+ }
+
+  .info-link span {
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+
+
+
+/* .info-section-container span {
+  display: block;
 }
+.social-icons span {
+  display: block;
+} */
+
 
 /* gallery section */
 .gallery {
@@ -362,6 +386,7 @@ input {
   line-height: 29px;
   border-radius: 0;
   border: none;
+  /*  to remove the whitespace between the input fields */
   float: left;
 }
 
