@@ -31,10 +31,10 @@
       <!-- Navigation STARTS-->
       <nav class="main-menu">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
       <!-- Navigation ENDS-->
@@ -44,10 +44,10 @@
       </div>
       <div>
         <ul class="banner-icons">
-          <li><a href="#"><i class="fab fa-instagram"></i></a></i></li>
-          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href=""><i class="fab fa-snapchat-ghost"></i></a></li>
-          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></i></li>
+          <li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fab fa-snapchat-ghost" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
         </ul>
       </div>
 
@@ -60,9 +60,8 @@
     <!-- Lineup Section STARTS -->
     <!-- will have two column layout - image & content -->
     <section class="lineup clearfix">
-      <img src="./assets/lineup-section.png" alt="Male singer on stage." srcset="">
-      <div class="wrapper ">
-
+      <img src="./assets/lineup-section.png" alt="Male singer on stage.">
+      <div class="wrapper clearfix">
         <div class="lineup-content-container">
           <div class="lineup-text">
             <h2>Performing Line Up</h2>
@@ -81,11 +80,8 @@
 
     <!-- New Experiences Section STARTS -->
     <section class="experiences">
-      <img src="./assets/experiences-section.png" alt="Saxophone under the stage lights." srcset="">
+      <img src="./assets/experiences-section.png" alt="Saxophone under the stage lights.">
       <div class="wrapper clearfix">
-        <!-- <div class="experiences-img-container">
-          <img src="./assets/experiences-section.png" alt="Saxophone under the stage lights." srcset="">
-        </div> -->
         <div class="experiences-content-container">
           <div class="experiences-text">
             <h2>New Experiences</h2>
@@ -104,13 +100,16 @@
     <section class="tickets">
       <div class="wrapper clearfix">
         <div class="tickets-img-container">
-          <img src="./assets/tickets-section.png" alt="People dancing with their hands in the air in a concert venue." srcset="">
+          <img src="./assets/tickets-section.png" alt="People dancing with their hands in the air in a concert venue.">
         </div>
         <div class="tickets-content-container">
-          <h2>Get Your Tickets</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto aspernatur doloremque maxime eaque soluta facere incidunt? Deserunt voluptatem fugit sed tenetur dolor obcaecati hic iure fugiat expedita ex. Atque tempora molestias amet, nobis omnis aliquam modi. Tempora, temporibus dolore.
-          </p>
-          <button>Read More</button>
+          <div class="tickets-text">
+            <h2>Get Your Tickets</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto aspernatur doloremque maxime eaque soluta facere incidunt? Deserunt voluptatem fugit sed tenetur dolor obcaecati hic iure fugiat expedita ex. Atque tempora molestias amet, nobis omnis aliquam modi. Tempora, temporibus dolore.
+            </p>
+            <button>Read More</button>
+          </div>
+
         </div>
       </div>
     </section>
@@ -119,11 +118,11 @@
     <!-- Social Icons Section STARTS -->
     <section class="info-section">
       <!-- <div class="wrapper clearfix"> -->
-        <div class="info-section-container">
-            <a href="#" class="info-link"><i class="fas fa-location-arrow social-icons"></i><span>Locations</span></a>
-            <a href="#" class="info-link"><i class="fas fa-ticket-alt social-icons"></i><span>Tickets</span></a>
-            <a href="#" class=info-link><i class="fas fa-phone social-icons"></i><span>Reach Out</span></a>
-        </div>
+        <ul class="info-section-container">
+            <li><a href="#" class="info-link"><i class="fas fa-location-arrow social-icons" aria-hidden="true"></i><span>Locations</span></a></li>
+            <li><a href="#" class="info-link"><i class="fas fa-ticket-alt social-icons" aria-hidden="true"></i><span>Tickets</span></a></li>
+           <li><a href="#" class=info-link><i class="fas fa-phone social-icons" aria-hidden="true"></i><span>Reach Out</span></a></li>
+        </ul>
       <!-- </div> -->
     </section>
     <!-- Social Icons Section ENDS -->
@@ -144,28 +143,25 @@
   </main>
   <!--  Main ENDS -->
 
-  <!-- Site Footer -->
   <!-- Site footer -->
   <footer class="site-footer">
     <div class="wrapper clearfix">
       <!-- Footer Navigation STARTS-->
       <nav class="main-menu">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
       <!-- Footer Navigation ENDS-->
 
-      <!-- Contact Section (TO DO - figure out if it should be a DIV or Section) -->
       <div class="contact-info">
         <h2>Contact</h2>
         <p> info@email.com | 123 - 456 - 7890</p>
         <p>123 some road, Toronto, ON</p>
         <p>A5A 5A5, Canada</p>
-
       </div>
 
       <div class="subscribe clearfix">
@@ -181,7 +177,6 @@
     <!-- Wrapper Div ENDS -->
     <section class="copyright">
       <p>Copyright &copy; 2019 Juno College<a href="https://junocollege.com/"><span>Created at Juno College</span></a></span></p>
-
     </section>
   </footer>
 

@@ -133,6 +133,8 @@ a {
   font-family: 'Iceberg', cursive;
   font-size: 5.2rem;
   text-transform: uppercase;
+  /* need this for wrapping text properly */
+  line-height: 5rem;
  }
 
 
@@ -203,6 +205,7 @@ h1 {
   text-align: center;;
   line-height: 80px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 header h2 {
@@ -251,14 +254,16 @@ nav {
 }
 
 .lineup-content-container {
-  width: calc(50% - 60px);
-  margin-right: 60px;
+  width: calc(50% - 50px);
+  margin-right: 50px;
   /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
   /* padding: 100px 0; */
   display: table;
 }
 
-.lineup-text, .experiences-text {
+.lineup-text,
+.experiences-text,
+.tickets-text {
   display: table-cell;
   vertical-align: middle;
 }
@@ -321,10 +326,12 @@ nav {
   width: calc(40% - 40px);
     /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
     margin-right: 40px;
+
 }
 
 .tickets-content-container {
   width: 60%;
+  display: table;
 }
 
 
@@ -384,8 +391,8 @@ nav {
 
 .gallery li {
   float: left;
-  width: calc((100% - 140px) / 3);
-  /* margin-right: 40px; */
+  /* substracting only 80px as only two of the el have margin-right applied  */
+  width: calc((100% - 80px) / 3);
   margin-top: 100px;
   margin-right: 40px;
 }
