@@ -371,8 +371,13 @@ footer {
   font-weight: bold;
   /* this also doesn't do anything */
   bottom: 0;
-
 }
+
+.copyright a {
+  /* for accesability */
+  padding: 10px;
+}
+
 .contact-info {
   width: 50%;
   float: left;
