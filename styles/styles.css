@@ -184,8 +184,12 @@ header h2 {
   text-align: center;
   text-transform: none;
   background-color: rgb(146, 0, 255);
-  padding: 20px 0;
+
   /*  TO DO - fix the width */
+  display: table; /* keep the background color wrapped tight */
+  margin: 0px auto 0px auto; /* keep the table centered */
+   padding: 25px;
+
 }
 
 
