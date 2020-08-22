@@ -229,6 +229,12 @@ nav {
     display: inline-block;
 }
 
+/* first two sections global */
+
+.experiences img, .lineup img {
+  object-fit: cover;
+  height: 713px;
+}
 
 /* lineup section */
 .lineup {
@@ -240,14 +246,21 @@ nav {
 .lineup-content-container,
 .lineup-img-container {
   float: left;
+  height: 713px;
+
 }
 
 .lineup-content-container {
   width: calc(50% - 60px);
   margin-right: 60px;
   /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  display: table;
+}
 
+.lineup-text, .experiences-text {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .lineup-img-container {
@@ -261,8 +274,6 @@ nav {
 .lineup img {
   width: 50%;
   float: right;
-  object-fit: cover;
-  height: 700px;
 }
 
 
@@ -273,24 +284,25 @@ nav {
 
 .experiences-content-container, .experiences-img-container {
   float: left;
+  height: 713px;
 }
 
 .experiences-img-container {
   width: 50%;
+
 }
 
 .experiences img {
   width: 50%;
   float: left;
-  object-fit: cover;
-  height: 700px;
 }
 
 .experiences-content-container {
   width: calc(50% - 60px);
   margin-left: 60px;
   /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  display: table;
 }
 
 
@@ -398,7 +410,6 @@ footer {
   /* i don't think this does anything */
   position: relative;
   text-align: center;
-  font-weight: bold;
   /* this also doesn't do anything */
   bottom: 0;
 }
