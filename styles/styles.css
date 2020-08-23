@@ -147,6 +147,16 @@ a {
   padding: 15px;
 }
 
+.read-more-btn:hover, .submit-button:hover {
+  background-color: rgb(146, 0, 255, 0.7);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  transition: all 0.4s ease 0s;
+}
+
+.read-more-btn:focus, .submit-button:focus {
+  outline: 5px auto;
+}
+
 .read-more-btn {
   display: inline-block; /* creates space between p and the a tag */
 }
@@ -196,6 +206,11 @@ header {
   padding-bottom: 20px;
 }
 
+.banner-icons li:hover {
+  transform: translateY(-5px);
+  transition:0.4s;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+}
 
 h1 {
   font-family: 'Iceberg', cursive;
@@ -225,6 +240,11 @@ nav {
     display: inline-block;
 }
 
+nav li:hover {
+  border-bottom: 1px solid white;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  transition: all 0.4s ease 0s;
+}
 
 /* sections - all */
 .experiences img, .lineup img {
@@ -343,6 +363,14 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   display: inline-block; /* horizontal layout & centering */
+}
+
+.info-link:hover,
+.info-link:focus {
+  transform: translateY(-5px);
+  border-bottom: 1px solid white;
+  transition:0.4s;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
 
  .fas.contact-icons {
