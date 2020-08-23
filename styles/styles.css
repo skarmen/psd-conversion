@@ -113,6 +113,7 @@ ul {
 a {
     text-decoration: none;
     color:#fff;
+    /* for accesability */
     padding: 20px;
     /* font-size: 35px; */
 }
@@ -335,26 +336,31 @@ nav {
 }
 
 
-/* social icons section */
+/* contact icons section */
 .info-section {
   background-color: rgb(61,3,105);
   padding: 100px 0;
-  height: 200px;
-  /* how to give this section more width */
 }
 
-/* this centers the entire container  */
+
  .info-section-container {
-    /* width: 50%; */
+   /* centers the content * the whole container */
     text-align: center;
-    margin: 0 25%;
+    margin: 0 auto;
 
   }
 
-  /* to position the li horizontally */
-  .info-section-container ul li {
-    float: left;
-  }
+
+  .info-section-container ul {
+    display: inline-block;
+}
+
+.info-section-container ul li {
+  text-align: center;
+  margin: 20px ;
+  display: inline-block;
+}
+
 
   .info-link  {
   font-family: 'Montserrat', sans-serif;
@@ -362,26 +368,16 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  /* for accesability */
-  padding: 10px;
-  /* width: 30%;
-  display: inline-block; */
+  display: inline-block;
  }
 
-  .contact-icons {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-
-
-/* .info-section-container span {
+ .fas.contact-icons {
+   /* .fas selector is needed to override the default css */
   display: block;
+  padding-bottom:20px;
 }
-.social-icons span {
-  display: block;
-} */
+
+
 
 
 /* gallery section */
@@ -454,4 +450,12 @@ input {
 
 .input-field {
   width: 60%;
+}
+
+
+/* MEDIA QUEIRIES */
+
+/*  TO DO check the breakpoint */
+@media screen and (max-width: 650px){
+  .info-section-container ul li { display: block;}
 }
