@@ -417,6 +417,9 @@ input {
   float: left;   /* to remove the whitespace between the input fields */
 }
 
+.input-field {
+  width: 60%;
+}
 
 
 
