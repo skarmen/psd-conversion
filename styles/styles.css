@@ -91,23 +91,24 @@ rgb(8,8,11)
 */
 
 
-/* GLOBALLY DEFINED STYLES */
+/* GLOBALLY DEFINED STYLES
+========================== */
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    line-height: 29px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  line-height: 29px;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 a {
@@ -118,16 +119,12 @@ a {
     /* font-size: 35px; */
 }
 
-
-/* reusable class - constraint the content */
+/* reusable class - constraints the content */
 .wrapper {
-    width: 90%;
-    max-width: 1080px;
-    /* it wont'grow past this width */
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
-
-
 
 /* section headings  */
  h2 {
@@ -137,9 +134,6 @@ a {
   /* need this for wrapping text properly */
   line-height: 5rem;
  }
-
-
-
 
 /* buttons */
 .read-more-btn, .submit-button {
@@ -154,34 +148,35 @@ a {
 }
 
 .read-more-btn {
-  display: inline-block;
+  display: inline-block; /* creates space between p and the a tag */
+}
+.read-more a {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-/*  TO DO - fix the subscribe button */
 
-
-
+/* ========================== */
 
 
 
 
 /* header */
 header {
-    background-image: url(../assets/main-banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* viewport (screen height), the el is now taking 90% of the browser height */
-    /* We are doing this since the <header> doesn't have a ton
+  background-image: url(../assets/main-banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* viewport (screen height), the el is now taking 90% of the browser height */
+  /* We are doing this since the <header> doesn't have a ton
   of content and we want to be able to see the background image. */
-    height: 90vh;
-    padding-top: 30px;
-    /* center the content vertically */
-    position: relative;
-
+  height: 90vh;
+  padding-top: 30px;
+  /* center the text content vertically */
+  position: relative;
 }
 
 .banner-content {
-  /* center the content vertically */
+  /* center the text content vertically */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -197,7 +192,6 @@ header {
 }
 
 .banner-icons li {
-  /* padding-right: 30px; */
   font-size: 2.9rem;
   padding-bottom: 20px;
 }
@@ -209,7 +203,6 @@ h1 {
   text-align: center;;
   line-height: 80px;
   text-transform: uppercase;
-  white-space: nowrap;
 }
 
 header h2 {
@@ -218,12 +211,8 @@ header h2 {
   text-align: center;
   text-transform: none;
   background-color: rgb(146, 0, 255);
-  display: table; /* keep the background color wrapped tight */
-  margin: 0px auto 0px auto; /*keep the table centered */
   padding: 25px;
 }
-
-
 
 
 /* navigation */
@@ -236,21 +225,27 @@ nav {
     display: inline-block;
 }
 
-/* first two sections global */
 
+/* sections - all */
 .experiences img, .lineup img {
   object-fit: cover;
   height: 713px;
 }
 
-
-/* lineup section */
-.lineup {
+.lineup, .experiences {
   background-color: rgb(16,6,50);
-  /* padding: 100px 0; */
-  /* may want to combine to add new expericnes to the same rules */
 }
 
+.lineup-text,
+.experiences-text,
+.tickets-text {
+  /* center content vertically */
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/* lineup section */
 .lineup-content-container {
   float: left;
   height: 713px;
@@ -258,10 +253,9 @@ nav {
 }
 
 .lineup-content-container {
-  width: calc(50% - 50px);
+  width: calc(50% - 50px); /* calc the correct width - the margin, otherwise
+  the el will overflow on wrap below */
   margin-right: 50px;
-  /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
-  /* padding: 100px 0; */
   display: table;
 }
 
@@ -274,32 +268,12 @@ nav {
   float: right;
 }
 
-.lineup-text,
-.experiences-text,
-.tickets-text {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-
-/* .lineup-img-container img {
-  object-fit: cover;
-} */
-
-/*  image first not stacke din div - remove the div from the ima */
-
-
 
 /* new experiences section */
-.experiences {
-  background-color: rgb(16,6,50);
-}
-
 .experiences-content-container {
   float: left;
   height: 713px;
 }
-
 
 .experiences-content-container {
   width: calc(50% - 60px);
@@ -353,41 +327,29 @@ nav {
 
 
 .info-section-container {
-  /* centers the content * the whole container */
+  /* centers the content & the whole container */
   text-align: center;
   margin: 0 auto;
-
-}
-
-
-.info-section-container ul {
-  display: inline-block;
 }
 
 .info-section-container ul li {
-  text-align: center;
   margin: 20px ;
-  display: inline-block;
+  display: inline-block; /* horizontal layout */
 }
-
 
   .info-link  {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-  display: inline-block;
- }
-
- .fas.contact-icons {
-   /* .fas selector is needed to override the default css */
-  display: block;
-  padding-bottom:20px;
+  display: inline-block; /* horizontal layout & centering */
 }
 
-
-
+ .fas.contact-icons {
+  /* .fas selector is needed to override the default css - making the selector more specific */
+  display: block; /* vertical alignment */
+  padding-bottom:20px;
+}
 
 /* gallery section */
 .gallery {
@@ -414,28 +376,20 @@ nav {
 
 
 /* footer */
-
 footer {
   background-color: rgb(61,3,105);
   padding-top: 100px;
-  /* position: relative; */
-  width: 100%
 }
 
 .copyright {
   background-color: rgb(16,6,50);
-  /* i don't think this does anything */
-  position: relative;
   text-align: center;
-  /* this also doesn't do anything */
-  bottom: 0;
   padding: 2px 5px;
 }
 
 .juno-footer-link {
-  padding: 0;
+  padding: 0; /* remove padding from the a tag, doesn't work with the desing */
 }
-
 
 .contact-info {
   width: 50%;
@@ -449,7 +403,6 @@ footer {
 .subscribe {
   width: 50%;
   float: left;
-  /* float: right - what is the difference */
 }
 
 .subscribe, .contact-info {
@@ -459,27 +412,19 @@ footer {
 input {
   padding: 15px;
   line-height: 29px;
-  box-sizing: border-box;
-  border-radius: 0;
+  box-sizing: border-box; /* contraints the input fields width */
   border: none;
-  /*  to remove the whitespace between the input fields */
-  float: left;
-}
-
-.input-field {
-  width: 60%;
+  float: left;   /* to remove the whitespace between the input fields */
 }
 
 
-/* MEDIA QUEIRIES */
+
+
+/* MEDIA QUEIRIES
+========================== */
 
 /* Landscape phone to portrait tablet */
 @media screen and (max-width: 880px) {
-  /* width: 100%;
-  clear: both;  doesn't allow other elements to float beside it */
-  /* float: none;  telling the element itself not to float */
-
-
   /* header */
   .main-menu:not(.footer-nav) {
     display: none;
@@ -495,7 +440,9 @@ input {
 
 
   /* sections - all */
-  .lineup-content-container, .experiences-content-container, .tickets-content-container {
+  .lineup-content-container,
+  .experiences-content-container,
+  .tickets-content-container {
     margin: 0 auto;
   }
 
@@ -503,10 +450,6 @@ input {
     text-align: center;
   }
 
-  .read-more a {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 
   /* lineup section */
   .lineup-content-container,
@@ -515,12 +458,12 @@ input {
     float: none;
   }
 
+
   /* experiences section */
   .experiences-content-container,
   .experiences img {
     width: 100%;
     float: none;
-    /* TO DO - need to align content center and fix margins */
   }
 
   /* tickets section */
@@ -528,7 +471,6 @@ input {
   .tickets-img-container {
     width: 100%;
     float: none;
-
   }
 
   .tickets-content-container {
@@ -541,30 +483,33 @@ input {
   }
 
   /* contact icons section */
-  .info-section-container ul li { display: block;
+  .info-section-container ul li {
+    display: block; /* vertical layout*/
   }
 
-  /* galerry */
 
+  /* galerry */
   .gallery li {
     float: left;
-    /* substracting only 80px as only two of the el have margin-right applied  */
+    /* substracting only 80px as only two of the el have margin-right applied */
     width: calc((100% - 40px) / 2);
     margin-top: 100px;
     margin-right: 40px;
   }
 
-
-  .gallery li:nth-child(2){
+  .gallery li:nth-child(2) {
     margin-right: 0;
   }
 
-  .gallery li:nth-child(3){
+  .gallery li:nth-child(3) {
     display: none;
   }
 
   /* footer */
-  .subscribe, .contact-info, .input-field, .submit-button{
+  .subscribe,
+  .contact-info,
+  .input-field,
+  .submit-button{
     width: 100%;
     float: none;
     text-align: center;
@@ -579,27 +524,24 @@ input {
   }
 }
 
-
-
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-
-  /*  header */
-  header h2 {
-    white-space: normal;
-  }
-}
-
+/* Fix footer navigation before it breaks (at 480px it is already broken) */
 @media (max-width: 524px) {
   /* footer navigation */
   .footer-nav ul li {
+    /* this is better display for mobile navigation */
     display: block;
   }
 
-/* selects only the first 3  */
+/* selects only the first 3 el */
   .footer-nav li:nth-child(-n+3) {
     padding-bottom: 20px;
   }
 }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /*  header */
+  header h2 {
+    white-space: normal;
+  }
 }
