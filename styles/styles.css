@@ -514,7 +514,27 @@ input {
   }
 
   /* contact icons section */
-  .info-section-container ul li { display: block;}
+  .info-section-container ul li { display: block;
+  }
+
+  /* galerry */
+
+  .gallery li {
+    float: left;
+    /* substracting only 80px as only two of the el have margin-right applied  */
+    width: calc((100% - 40px) / 2);
+    margin-top: 100px;
+    margin-right: 40px;
+  }
+
+
+  .gallery li:nth-child(2){
+    margin-right: 0;
+  }
+
+  .gallery li:nth-child(3){
+    display: none;
+  }
 }
 
 /* Landscape phones and down */
