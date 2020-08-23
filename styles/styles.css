@@ -469,7 +469,7 @@ input {
 
 
   /* header */
-  .main-menu {
+  .main-menu:not(.footer-nav) {
     display: none;
   }
 
@@ -510,7 +510,7 @@ input {
   }
 
   .tickets-img-container img {
-    width: 100%;
+    max-width: 100%;
   }
 
   /* contact icons section */
@@ -535,14 +535,31 @@ input {
   .gallery li:nth-child(3){
     display: none;
   }
-}
+
+  /* navigation */
+  /* navigation */
+
+
+
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
   /*  header */
-
   header h2 {
     white-space: normal;
   }
+}
+
+@media (max-width: 524px) {
+  /* footer navigation */
+  .footer-nav ul li {
+    display: block;
+  }
+
+/* selects only the first 3  */
+  .footer-nav li:nth-child(-n+3) {
+    padding-bottom: 20px;
+  }
+}
 }
