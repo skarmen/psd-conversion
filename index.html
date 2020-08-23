@@ -12,13 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- TO DO
-3. Check all the cleafix and wrapper classes
--->
-  <!-- Header STARTS -->
+
   <header>
     <div class="wrapper">
-      <!-- Navigation STARTS-->
       <nav class="main-menu">
         <ul>
           <li><a href="#">Home</a></li>
@@ -27,9 +23,8 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <!-- Navigation ENDS-->
       <div class="banner-content">
-        <h1>Thunder<br>Force<br> Stadium</h1>
+        <h1>Thunder<br>Force<br>Stadium</h1>
         <h2>presented by hot cops</h2>
       </div>
       <div>
@@ -40,18 +35,14 @@
           <li><a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
         </ul>
       </div>
-
     </div>
   </header>
-  <!-- Header ENDS -->
 
-  <!-- Main STARTS -->
+
   <main>
-    <!-- Lineup Section STARTS -->
-    <!-- will have two column layout - image & content -->
     <section class="lineup clearfix">
       <img src="./assets/lineup-section.png" alt="Male singer on stage.">
-      <div class="wrapper clearfix">
+      <div class="wrapper">
         <div class="lineup-content-container">
           <div class="lineup-text">
             <h2>Performing Line Up</h2>
@@ -64,12 +55,10 @@
         </div>
       </div>
     </section>
-    <!-- Lineup Section ENDS -->
 
-    <!-- New Experiences Section STARTS -->
-    <section class="experiences">
+    <section class="experiences clearfix">
       <img src="./assets/experiences-section.png" alt="Saxophone under the stage lights.">
-      <div class="wrapper clearfix">
+      <div class="wrapper">
         <div class="experiences-content-container">
           <div class="experiences-text">
             <h2>New Experiences</h2>
@@ -82,10 +71,7 @@
         </div>
       </div>
     </section>
-    <!-- New Experiences Section ENDS -->
 
-
-    <!-- Tickets Section STARTS -->
     <section class="tickets">
       <div class="wrapper clearfix">
         <div class="tickets-img-container">
@@ -103,9 +89,7 @@
         </div>
       </div>
     </section>
-    <!-- Tickets Section ENDS -->
 
-    <!-- Social Icons Section STARTS -->
     <div class="info-section">
       <div class="wrapper">
         <section class="info-section-container">
@@ -118,8 +102,7 @@
       </div>
     </div>
 
-    <!-- Gallery Section STARTS -->
-    <section class="gallery">
+    <section class="gallery clearfix">
       <div class="wrapper">
       <h2>The Gram</h2>
       <!-- best practice to store repeated group content in a list -->
@@ -130,14 +113,12 @@
         <li><img src="./assets/gallery3.png" alt="Plate with delicious wings and some dipping sauce on the side."></li>
       </div>
     </section>
-    <!--Gallery Section ENDS -->
   </main>
   <!--  Main ENDS -->
 
   <!-- Site footer -->
   <footer class="site-footer">
     <div class="wrapper clearfix">
-      <!-- Footer Navigation STARTS-->
       <nav class="main-menu footer-nav">
         <ul>
           <li><a href="#">Home</a></li>
@@ -146,7 +127,6 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <!-- Footer Navigation ENDS-->
 
       <div class="contact-info">
         <h2>Contact</h2>
@@ -157,7 +137,7 @@
         </ul>
       </div>
 
-      <div class="subscribe clearfix">
+      <div class="subscribe">
         <h2>Stay Updated</h2>
         <p>Subscribe to our newsletter to stay updated.</p>
         <form action="/newsletter-subscription" class="form-inline">
@@ -167,11 +147,10 @@
         </form>
       </div>
     </div>
-    <!-- Wrapper Div ENDS -->
+
     <section class="copyright">
       <p>Copyright &copy; 2019 Juno College<a href="https://junocollege.com/" class="juno-footer-link"> - Created at Juno College</a></p>
     </section>
   </footer>
-  </header>
 </body>
 </html>
