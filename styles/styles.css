@@ -240,6 +240,7 @@ nav {
   height: 713px;
 }
 
+
 /* lineup section */
 .lineup {
   background-color: rgb(16,6,50);
@@ -247,8 +248,7 @@ nav {
   /* may want to combine to add new expericnes to the same rules */
 }
 
-.lineup-content-container,
-.lineup-img-container {
+.lineup-content-container {
   float: left;
   height: 713px;
 
@@ -262,6 +262,15 @@ nav {
   display: table;
 }
 
+.lineup-img-container {
+    width: 50%;
+}
+
+.lineup img {
+  width: 50%;
+  float: right;
+}
+
 .lineup-text,
 .experiences-text,
 .tickets-text {
@@ -269,18 +278,13 @@ nav {
   vertical-align: middle;
 }
 
-.lineup-img-container {
-    width: 50%;
-}
+
 /* .lineup-img-container img {
   object-fit: cover;
 } */
 
 /*  image first not stacke din div - remove the div from the ima */
-.lineup img {
-  width: 50%;
-  float: right;
-}
+
 
 
 /* new experiences section */
@@ -288,9 +292,18 @@ nav {
   background-color: rgb(16,6,50);
 }
 
-.experiences-content-container, .experiences-img-container {
+.experiences-content-container {
   float: left;
   height: 713px;
+}
+
+
+.experiences-content-container {
+  width: calc(50% - 60px);
+  margin-left: 60px;
+  /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
+  /* padding: 100px 0; */
+  display: table;
 }
 
 .experiences-img-container {
@@ -303,13 +316,6 @@ nav {
   float: left;
 }
 
-.experiences-content-container {
-  width: calc(50% - 60px);
-  margin-left: 60px;
-  /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
-  /* padding: 100px 0; */
-  display: table;
-}
 
 
 /* tickets section */
@@ -479,6 +485,22 @@ input {
   header h2 {
     white-space: nowrap;
   }
+
+  /* lineup section */
+  .lineup-content-container,
+  .lineup img {
+    width: 100%;
+    float: none;
+  }
+
+  /* experiences section */
+  .experiences-content-container,
+  .experiences img {
+    width: 100%;
+    float: none;
+    /* TO DO - need to align content center and fix margins */
+  }
+
 }
 
 /* Landscape phones and down */
