@@ -349,16 +349,16 @@ nav {
 }
 
 
- .info-section-container {
-   /* centers the content * the whole container */
-    text-align: center;
-    margin: 0 auto;
+.info-section-container {
+  /* centers the content * the whole container */
+  text-align: center;
+  margin: 0 auto;
 
-  }
+}
 
 
-  .info-section-container ul {
-    display: inline-block;
+.info-section-container ul {
+  display: inline-block;
 }
 
 .info-section-container ul li {
@@ -501,6 +501,24 @@ input {
     /* TO DO - need to align content center and fix margins */
   }
 
+  /* tickets section */
+  .tickets-content-container,
+  .tickets-img-container {
+    width: 100%;
+    float: none;
+
+  }
+
+  .tickets-content-container {
+    margin-right: 0;
+    padding-top: 60px;
+  }
+
+  .tickets-img-container img {
+    width: 100%;
+  }
+
+  .t
 }
 
 /* Landscape phones and down */
