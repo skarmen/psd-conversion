@@ -435,6 +435,10 @@ footer {
   float: left;
 }
 
+.contact-info-list {
+  padding-top: 20px;
+}
+
 .subscribe {
   width: 50%;
   float: left;
@@ -448,6 +452,7 @@ footer {
 input {
   padding: 15px;
   line-height: 29px;
+  box-sizing: border-box;
   border-radius: 0;
   border: none;
   /*  to remove the whitespace between the input fields */
@@ -536,8 +541,21 @@ input {
     display: none;
   }
 
-  /* navigation */
-  /* navigation */
+  /* footer */
+  .subscribe, .contact-info, .input-field, .submit-button{
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .input-field {
+    margin-bottom: 20px;
+  }
+
+  .subscribe {
+    padding-top: 0;
+  }
+}
 
 
 
