@@ -461,11 +461,6 @@ input {
 
 /* MEDIA QUEIRIES */
 
-/*  TO DO check the breakpoint */
-@media screen and (max-width: 650px){
-  .info-section-container ul li { display: block;}
-}
-
 /* Landscape phone to portrait tablet */
 @media screen and (max-width: 880px) {
   /* width: 100%;
@@ -518,7 +513,8 @@ input {
     width: 100%;
   }
 
-  .t
+  /* contact icons section */
+  .info-section-container ul li { display: block;}
 }
 
 /* Landscape phones and down */
