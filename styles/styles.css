@@ -459,3 +459,34 @@ input {
 @media screen and (max-width: 650px){
   .info-section-container ul li { display: block;}
 }
+
+/* Landscape phone to portrait tablet */
+@media screen and (max-width: 880px) {
+  /* width: 100%;
+  clear: both;  doesn't allow other elements to float beside it */
+  /* float: none;  telling the element itself not to float */
+
+
+  /* header */
+  .main-menu {
+    display: none;
+  }
+
+  .banner-icons {
+    display: none;
+  }
+
+  header h2 {
+    white-space: nowrap;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+  /*  header */
+
+  header h2 {
+    white-space: normal;
+  }
+}
