@@ -428,6 +428,9 @@ footer {
   bottom: 0;
 }
 
+.juno-footer-link {
+  padding: 0;
+}
 
 
 .contact-info {
