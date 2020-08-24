@@ -303,7 +303,6 @@ nav li:focus {
   width: calc(50% - 60px);
   margin-left: 60px;
   /* calc the correct width - the margin, otherwise the el will overflow on wrap below */
-  /* padding: 100px 0; */
   display: table;
 }
 
