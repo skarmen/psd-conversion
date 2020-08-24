@@ -246,6 +246,10 @@ nav li:hover {
   transition: all 0.4s ease 0s;
 }
 
+nav li:focus {
+   outline: 5px auto;
+}
+
 /* sections - all */
 .experiences img, .lineup img {
   object-fit: cover;
@@ -367,6 +371,7 @@ nav li:hover {
 
 .info-link:hover,
 .info-link:focus {
+  /* hover effect from https://www.fabriziovanmarciano.com/button-styles/ */
   transform: translateY(-5px);
   border-bottom: 1px solid white;
   transition:0.4s;
