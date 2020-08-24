@@ -247,7 +247,7 @@ nav li:hover {
 }
 
 nav li:focus {
-   outline: 5px auto;
+  outline: 5px auto;
 }
 
 /* sections - all */
@@ -452,6 +452,7 @@ input {
 
 .input-field {
   width: 60%;
+  padding-left: 20px; /* adds extra space inside the input field */
 }
 
 
