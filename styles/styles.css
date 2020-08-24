@@ -462,7 +462,8 @@ input {
 /* Landscape phone to portrait tablet */
 @media screen and (max-width: 880px) {
   /* header */
-  .main-menu:not(.footer-nav) {
+  /* accessability tip - hide only the li as the nav gives semantic meaning to sr */
+  .top-nav-list li {
     display: none;
   }
 
