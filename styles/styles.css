@@ -241,7 +241,6 @@ nav {
 }
 
 nav li:hover {
-  border-bottom: 1px solid white;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
   transition: all 0.4s ease 0s;
 }
@@ -372,7 +371,6 @@ nav li:focus {
 .info-link:focus {
   /* hover effect from https://www.fabriziovanmarciano.com/button-styles/ */
   transform: translateY(-5px);
-  border-bottom: 1px solid white;
   transition:0.4s;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
